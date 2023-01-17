@@ -42,9 +42,15 @@ stages:
       md5: 1c2b13954110fc976f53685963630ab2
       size: 30451
     - path: src/train_and_evaluate.py
-      md5: 152a399838f2927106ff5bf8479d44f4
-      size: 2297
+      md5: 3c9b0026fcfa99b9cf246d5eefeb149e
+      size: 2597
     params:
       params.yaml:
         estimators.ElasticNet.params.alpha: 0.8
-        estimators.ElasticNet.params.l1_ratio: 0.3
+        estimators.ElasticNet.params.l1_ratio: 0.7
+  log_production_model:
+    cmd: python src/log_production_model.py --config=params.yaml
+    deps:
+    - path: src/log_production_model.py
+      md5: 386f6a67c5a0347c82b215b1dc80610c
+      size: 1885
