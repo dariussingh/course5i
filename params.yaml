@@ -33,4 +33,5 @@ mlflow_config:
   experiment_name: ElasticNet_Expense
   run_name: mlops
   registered_model_name: ElasticNetMedicalExpenses
-  remote_server_uri: http://127.0.0.1:5000 
+  remote_server_uri: http://ec2-3-108-215-13.ap-south-1.compute.amazonaws.com:5000/
+
