@@ -11,4 +11,6 @@ dvc
 jupyterlab
 argparse
 scikit-learn
-
+mlflow
+Django
+psycopg2
