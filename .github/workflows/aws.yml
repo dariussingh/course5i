@@ -65,9 +65,3 @@ jobs:
         service: ${{ env.ECS_SERVICE }}
         cluster: ${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-S
